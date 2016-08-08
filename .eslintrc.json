@@ -1,0 +1,38 @@
+{
+    "env": {
+        /* 使用环境及语法：浏览器；es6语法*/
+        "browser": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        /* 使用jsx */
+        "ecmaFeatures": {
+            "jsx": false
+        },
+        "sourceType": "module"
+    },
+    "rules": {
+        /* 缩进: tab 或 spaces */
+        /*
+        "indent": [
+            "error",
+            "tab"
+        ],*/
+
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        /* 引号使用: 单引号(single);双引号(double) */
+        "quotes": [
+            "error",
+            "single"
+        ],
+        /* 总是使用分号 */
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
+}
