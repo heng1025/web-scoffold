@@ -14,20 +14,13 @@
 
 
 ## 目录说明
-	+ src : 源代码
-		- app.js是入口文件
-
-	+ dist: 要发布的目录
-
-	+ test: 测试要用到的目录
-
-	+ package.json: npm包管理文件
-
-	+ .gitignore: git忽略文件
-
-	+ .eslintrc.json: js代码检查工具的配置文件
-
-	+ webpack.dev.js: 开发环境下webpack的配置文件
-
-	+ webpack.dist.js: 项目发布时webpack的配置文件
+ + src : 源代码
+   - app.js是入口文件
+ + dist: 要发布的目录
+ + test: 测试要用到的目录
+ + package.json: npm包管理文件
+ + .gitignore: git忽略文件
+ + .eslintrc.json: js代码检查工具的配置文件
+ + webpack.dev.js: 开发环境下webpack的配置文件
+ + webpack.dist.js: 项目发布时webpack的配置文件
 
