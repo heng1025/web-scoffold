@@ -1,0 +1,116 @@
+/**
+ *  time: 2016-8-1
+ *  version: 0.1
+ *  author: iHeng
+ *  des: 页面初始化样式
+ */
+
+html, body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, p, input,
+footer, header, nav, section, button, ::after, ::before {
+  padding: 0;
+  margin: 0;
+  /*清除移动端手机浏览器点击后的高亮样式*/
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  /*设置所有元素宽度的计算方式*/
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 设置页面的整体字体样式 */
+body {
+  /* sans-serif移动端默认字体 */
+  font-family: Helvetica, "microsoft yahei", monospace, Sans, Serif, Sans-Serif;
+  font-size: 14px;
+  color: #333;
+  /* 模拟原生的弹性滚动效果 */
+  -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6, em, i, b, strong {
+  font-weight: normal;
+  font-style: normal
+}
+
+/*清除ul,ol默认样式*/
+ol, ul, li {
+  list-style: none;
+}
+
+/*清除a标签的默认样式*/
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #333;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+img {
+  display: block;
+  width: 100%
+}
+
+/* 清除移动端浏览器表单的默认样式*/
+input[type="search"],
+input[type="tel"],
+textarea {
+  border: 0;
+  resize: none;
+  /*清除textarea可拉伸样式*/
+  outline: none;
+  -webkit-appearance: none;
+}
+
+/*清除浮动*/
+.clearfix::after,
+.clearfix::before {
+  content: ".";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1
+}
+
+/* 文本溢出用省略号表示 */
+.text-nowrap {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden
+}
+
+/* 禁用Webkit内核浏览器的文字大小调整功能 */
+@media screen and (max-device-width: 320px) {
+  body {
+    -webkit-text-size-adjust: none;
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  body {
+    -webkit-text-size-adjust: none;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    -webkit-text-size-adjust: none;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    -webkit-text-size-adjust: none;
+  }
+}
